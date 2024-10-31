@@ -1821,31 +1821,30 @@ input, select, textarea {
 				position: absolute;
 				background: #222222;
 				color: #ffffff;
-				top: -2.75em;
-				font-size: 0.3em;
-				height: 2.25em;
-				line-height: 2.25em;
+				top: -1em;
+				font-size: 0.4em; /* Texte très petit */
+				padding: 0.05em 0.15em; /* Padding ultra-réduit */
+				line-height: 1; /* Hauteur de ligne minimale */
 				left: 50%;
 				opacity: 0;
-				-moz-transition: opacity .25s ease-in-out;
-				-webkit-transition: opacity .25s ease-in-out;
-				-ms-transition: opacity .25s ease-in-out;
+				white-space: nowrap;
+				transform: translateX(-50%);
 				transition: opacity .25s ease-in-out;
-				width: 5.5em;
-				margin-left: -2.75em;
+				border-radius: 0.1em; /* Coins légèrement arrondis */
 			}
-
-				#nav a span:after {
-					content: '';
-					display: block;
-					position: absolute;
-					bottom: -0.4em;
-					left: 50%;
-					margin-left: -0.6em;
-					border-top: solid 0.6em #222222;
-					border-left: solid 0.6em transparent;
-					border-right: solid 0.6em transparent;
-				}
+			
+			#nav a span:after {
+				content: '';
+				display: block;
+				position: absolute;
+				bottom: -0.15em;
+				left: 50%;
+				transform: translateX(-50%);
+				border-top: solid 0.2em #222222; /* Triangle très réduit */
+				border-left: solid 0.2em transparent;
+				border-right: solid 0.2em transparent;
+			}
+			
 
 			#nav a:hover {
 				opacity: 1.0;
@@ -2233,3 +2232,4 @@ input, select, textarea {
     background: rgba(0, 0, 0, 0.5);
     z-index: 500;
 }
+
